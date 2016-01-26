@@ -1,0 +1,47 @@
+{
+
+        "1": {
+            "host": "flash.17173.com",
+            "type":"youxi",
+            "getname": ["tag", "playstep", "playaddress"],
+            "tag": "$('.game-info2-c1 .bd p').first().find('a').text()",
+            "playstep": "$('.game-info2-c2 .bd .bd01').html()",
+            "playaddress": "$('.operate-list li').first().find('a').attr('href')"
+        },
+
+        "2": {
+            "type":"youxi",
+            "host": "www.3366.com",
+            "getname": ["tag", "playstep", "description"],
+            "tag": "var tag = '';$('.tag_dlist dd').find('a').each(function() {var a = $(this);tag += a.text() + ','});tag = tag.substr(0, tag.length - 1);",
+            "playstep": "var html = '';html += $('.gm_desc').eq(3).html()+$('.gm_desc').eq(4).html()+$('.gm_desc').eq(5).html();",
+            "description": "$('.gm_summary p').text()"
+        },
+
+        "5": {
+            "type":"youxi",
+            "host": "www.3366.com",
+            "first": "/heji/301.shtml",
+            "else": "/heji/301_elsenum.shtml",
+            "secondNum": 2,
+            "gameul": "$('.mod_game_list').find('li')",
+            "getname": ["archref", "title", "icon"],
+            "archref": "oneFrom.host+li.find('a').attr('href')",
+            "title": "li.find('.txt').text()",
+            "icon": "li.find('img').attr('src')"
+        },
+
+        "3": {
+            "type":"youxi",
+            "host": "www.4399.com",
+            "first": "/flash_fl/7_1.htm",
+            "else": "/flash_fl/7_elsenum.htm",
+            "secondNum": 2,
+            "gameul": "$('.t1_ul').find('li')",
+            "getname": ["archref", "title", "icon"],
+            "archref": "oneFrom.host+li.find('a').attr('href')",
+            "title": "li.find('b').text()",
+            "icon": "li.find('img').attr('src')"
+        }
+
+}

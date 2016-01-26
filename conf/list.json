@@ -1,0 +1,70 @@
+{
+    "youxi": [
+        {
+            "url":"http://flash.17173.com/lanmu/xxl.shtml",
+            "type": "juese",
+            "start":0,
+            "total":11,
+            "host": "flash.17173.com",
+            "first": "/lanmu/xxl.shtml",
+            "else": "/lanmu/xxl_elsenum.shtml",
+            "secondNum": 1,
+            "gameul": "$('.left .con-list0').find('li')",
+            "getname": ["archref", "title", "icon"],
+            "archref": "li.find('a').attr('href')",
+            "title": "li.find('.txt').text()",
+            "icon": "li.find('.pic img').attr('src')",
+            "arcid":1
+        },
+        {
+            "url":"http://www.3366.com/heji/340.shtml",
+            "type": "zhanqi",
+            "start":0,
+            "total":2,
+            "host": "www.3366.com",
+            "first": "/heji/340.shtml",
+            "else": "/heji/340_elsenum.shtml",
+            "secondNum": 2,
+            "gameul": "$('.mod_game_list').find('li')",
+            "getname": ["archref", "title", "icon"],
+            "archref": "oneFrom.host+li.find('a').attr('href')",
+            "title": "li.find('.txt').text()",
+            "icon": "li.find('img').attr('src')",
+            "arcid":2
+        },
+        {
+            "url":"http://www.3366.com/heji/301.shtml",
+            "type": "yinyue",
+            "start":0,
+            "total":2,
+            "host": "www.3366.com",
+            "first": "/heji/301.shtml",
+            "else": "/heji/301_elsenum.shtml",
+            "secondNum": 2,
+            "gameul": "$('.mod_game_list').find('li')",
+            "getname": ["archref", "title", "icon"],
+            "archref": "oneFrom.host+li.find('a').attr('href')",
+            "title": "li.find('.txt').text()",
+            "icon": "li.find('img').attr('src')",
+            "arcid":2
+        },
+        {
+            "url":"http://www.4399.com/flash_fl/7_1.htm",
+            "type": "qipai",
+            "host": "www.4399.com",
+            "first": "/flash_fl/7_1.htm",
+            "else": "/flash_fl/7_elsenum.htm",
+            "secondNum": 2,
+            "start":0,
+            "total":8,
+            "gameul": "$('.t1_ul').find('li')",
+            "getname": ["archref", "title", "icon"],
+            "archref": "oneFrom.host+li.find('a').attr('href')",
+            "title": "li.find('b').text()",
+            "icon": "li.find('img').attr('src')",
+            "arcid":3
+        }
+
+    ]
+
+}
